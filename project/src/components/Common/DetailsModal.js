@@ -63,7 +63,7 @@ const DetailsModal = () => {
             <div className="mt-3">
               <a href="#!">
                 <i className="fa fa-clock-o fa-lg " aria-hidden="true" />
-                <strong className="">Next deadline May 26-2021</strong>
+                <strong className="">Next deadline April 7-2022</strong>
               </a>
             </div>
             <div className="mt-3">

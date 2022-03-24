@@ -30,7 +30,7 @@ app.use(methodOverride('_method'));
 
 // Routing to '/'
 app.get('/', (req, res) => {
-	res.send('Hello SWE Project!');
+	res.send('Hello IWP Project!');
 });
 
 // require('dotenv').config({ path: path.resolve(__dirname, './.env') });

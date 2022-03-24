@@ -76,7 +76,7 @@ const Sidebar = props => {
             </a>
           </li> */}
 
-          <li className="nav-item waves-effect waves-light">
+          {/* <li className="nav-item waves-effect waves-light">
             <a
               href={"/files?id=" + props.projectid}
               className="nav-link no-pl text-white"
@@ -87,7 +87,7 @@ const Sidebar = props => {
               />
               Project Files
             </a>
-          </li>
+          </li> */}
           <li className="nav-item waves-effect waves-light">
             <a
               href={"/schedule?id=" + props.projectid}
@@ -100,7 +100,7 @@ const Sidebar = props => {
               Schedule
             </a>
           </li>
-          <li className="nav-item waves-effect waves-light">
+          {/* <li className="nav-item waves-effect waves-light">
             <a
               href={"/repository?id=" + props.projectid}
               className="nav-link no-pl text-white"
@@ -108,7 +108,7 @@ const Sidebar = props => {
               <i className="fa fa-archive fa-lg mr-4 ml-3" aria-hidden="true" />
               Archive
             </a>
-          </li>
+          </li> */}
           <li className="nav-item waves-effect waves-light">
             <a
               href={"/history?id=" + props.projectid}

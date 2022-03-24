@@ -28,12 +28,12 @@ class Home extends Component {
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/tasks" component={Tasks} />
         <Route path="/milestones" component={Milestones} />
-        <Route path="/repository" component={Archive} />
+        {/* <Route path="/repository" component={Archive} /> */}
         <Route path="/progress" component={Progress} />
         <Route path="/chat" component={Chat} />
         <Route path="/schedule" component={Schedule} />
         <Route path="/history" component={History} />
-        <Route path="/files" component={AttachedFiles} />
+        {/* <Route path="/files" component={AttachedFiles} /> */}
         <Route path="/admin-dashboard" component={AdminDashboard} />
         <Route paht="/search" exact component={Search} />
         <Route component={ErrorPage} />

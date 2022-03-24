@@ -313,10 +313,10 @@ class Dashboard extends Component {
             &nbsp; Add Member &nbsp;
             {notification}
           </span>
-          <span className="btn btn-outline-secondary btn-rounded waves-effect">
+          {/* <span className="btn btn-outline-secondary btn-rounded waves-effect">
             <i className=" fa fa-edit fa-lg " />
             &nbsp; Edit Project
-          </span>
+          </span> */}
           <span className="btn btn-outline-danger btn-rounded waves-effect">
             <i className="fa fa-trash fa-lg" />
             &nbsp; Delete Project

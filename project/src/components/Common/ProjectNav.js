@@ -211,16 +211,17 @@ class ProjectNav extends Component {
                   href="#!"
                   id="navbardrop"
                   data-toggle="dropdown"
+                  aria-expanded="true"
                 >
                   <i className="fa fa-user-circle fa-lg" />
                   {this.state.username}
                 </a>
                 <div className="dropdown-menu dropdown-menu-right">
                   <a className="dropdown-item" href="#!">
-                    <i className="fa fa-gear" aria-hidden="true" /> Settings
+                    <i className="fa fa-gear" /> Settings
                   </a>
                   <a className="dropdown-item" href="#!">
-                    <i className="fa fa-id-card-o" aria-hidden="true" /> Profile
+                    <i className="fa fa-id-card-o"  /> Profile
                   </a>
                   <div className="dropdown-divider" />
                   <a
