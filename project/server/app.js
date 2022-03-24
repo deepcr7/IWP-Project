@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
 // const uri = process.env.MONGODB_URI;
 
 // Intializing mongodb and connecting
-mongoose.connect("mongodb+srv://deepeshsuranjan:deepcr7roxx@cluster0.dyyai.mongodb.net/SWE-PROJECT?retryWrites=true&w=majority", { useNewUrlParser: true,useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false})
+mongoose.connect("mongodb+srv://deepeshsuranjan:deepcr7roxx@cluster0.dyyai.mongodb.net/IWP-PROJECT?retryWrites=true&w=majority", { useNewUrlParser: true,useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false})
   .then(() => 
   console.log("Database is connected!"))
 

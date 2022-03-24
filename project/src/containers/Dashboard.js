@@ -317,7 +317,8 @@ class Dashboard extends Component {
             <i className=" fa fa-edit fa-lg " />
             &nbsp; Edit Project
           </span> */}
-          <span className="btn btn-outline-danger btn-rounded waves-effect">
+          <span className="btn btn-outline-danger btn-rounded waves-effect"
+          onClick={event => this.openModal(event)}>
             <i className="fa fa-trash fa-lg" />
             &nbsp; Delete Project
           </span>

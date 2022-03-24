@@ -1,7 +1,7 @@
 {
   "name": "iwp",
   "version": "1.0.0",
-  "description": "A task management and scheduling system",
+  "description": "A project management and scheduling system",
   "main": "app.js",
   "scripts": {
     "server": "nodemon app.js",
