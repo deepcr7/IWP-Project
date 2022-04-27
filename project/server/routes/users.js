@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 // Fetching a single user by ID from mongodb get '/users/:id'
 router.get('/:id',(req,res) => {
 
+    //This calls the User Model and looks to find the user for which the above Id is provided
     var query = userModel.findOne({_id: req.params.id});
 
     query.exec(function(err, doc) {
@@ -13,7 +14,7 @@ router.get('/:id',(req,res) => {
             res.send(err);
         } else {
             console.log(req.params.id);
-            res.json(doc);
+            res.json(doc);//converting that object in json format
         }
     });
 });

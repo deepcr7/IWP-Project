@@ -4,8 +4,11 @@ import Axios from "axios";
 
 class SignupForm extends Component {
   constructor(props) {
+    //class components always have to call props under the super class for the base constructor
     super(props);
     this.state = {
+      //these details are coming from the user in the form of an object
+      //and we create a constructor of it
       user: {},
       emailError: false,
       passwdError: false
@@ -38,7 +41,7 @@ class SignupForm extends Component {
   }
 
   onEmailChange(e) {
-    let re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+    let re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;//regex
 
     if (re.test(String(e.target.value).toLowerCase())) {
       this.setState({
@@ -142,7 +145,7 @@ class SignupForm extends Component {
     }
     e.preventDefault();
   }
-  render() {
+  render() {//html embedded in js
     let emailError, passwdError;
     if (this.state.emailError) {
       emailError = <div className="text-danger">Invalid Email address</div>;
@@ -155,7 +158,7 @@ class SignupForm extends Component {
         </div>
       );
     }
-    return (
+    return (//bootsrap we personalized it
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-6 offset-md-3 mt-5">
